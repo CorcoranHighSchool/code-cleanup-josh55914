@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SpawnManager : MonoBehaviour
 {
@@ -19,13 +17,6 @@ public class SpawnManager : MonoBehaviour
     {
         InvokeRepeating("SpawnObstacle", spawnDelay, spawnRate);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void SpawnObstacle()
     {
         Instantiate(obstaclePrefab, spawnPos, obstaclePrefab.transform.rotation);
